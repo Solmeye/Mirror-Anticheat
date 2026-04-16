@@ -12,8 +12,6 @@
 
 ___
 
-**Warning: This mod is still in development, it may contain bugs and is incomplete.**
-
 Mirror AntiCheat is a server-side anti-cheat designed to help server administrators detect cheating, malicious behavior, and alternate accounts, while providing tools to investigate.
 
 The project focuses on being compatible with the latest Minecraft version (26.1+) and avoiding any false flag.
@@ -22,14 +20,25 @@ This project uses [mixins](https://docs.fabricmc.net/develop/mixins/bytecode) to
 However, these mixins are currently not at a low enough level to be completely compatible with other mods
 
 
-## Filtered packages (ingoing) :
+### Next updates
+- Singleplayer support for Fabric & Quilt
+- Default configuration fix
+- Beta version
+- Support for Paper, Spigot, Folia, Bukkit, Sponge and Folia
+- Forge support
+- Configuration for ingoing and outgoing packets
+- Option to disable the auto antialt check
+- `/mirror freeze` command
+- Other (You too can also suggest)
+
+## Filtered packages (ingoing)
 *The following incoming packets are scanned for impossible or suspicious behavior*
 
 [None]
 
-## Filtered packages (outgoing) :
+## Filtered packages (outgoing)
 *Subsequent outgoing packets are filtered and fake the data when a Vanilla client cannot distinguish the difference.
-A vanilla client will notice no difference*
+This is done in order to prevent or limit the effectiveness of a cheat*
 
 <details>
 <summary>ClientboundPlayerCombatEndPacket</summary>
@@ -141,7 +150,6 @@ Resolves [translation keys](https://bugs.mojang.com/browse/MC/issues/MC-265322).
 
 ## Configuration
 A default configuration is provided.
-More options and documentation will be added as development continues.
 
 <details>
 <summary>Default configuration</summary>
@@ -258,6 +266,19 @@ More options and documentation will be added as development continues.
 <details>
 <summary>Explanation</summary>
  
+  - `key`
+
+    - `identifier` Identifier where the key comes from.
+Used for display purposes only
+
+    - `keys` Key list
+
+    - `commandsOnEachFound` Command to execute for each key when resolved by autoresolve
+
+    - `commandsOnEachNotFound` Command to execute for each key when not resolved by autoresolve
+
+    - `autoresolve` Automatically resolves this key group when connecting a player or not
+
   - `antiAlt`
 
     - `scoreSuspicious` Threshold to execute the commands associated. When the matching alt value is higher than `scoreSuspicious`, it means that the match is suspicious and needs investigation. Min `0` Max `100`
@@ -286,20 +307,20 @@ The antialt system is not explained in detail to avoid easy bypass.
 
 ## FAQ
 ### How does this mod work?
-Mirror modifies outgoing network packets to remove or alter data that a vanilla client does not rely on. This is intended to reduce unnecessary information exposure without affecting normal gameplay.
-
+Mirror AntiCheat modifies outgoing network packets to remove or alter data that a vanilla client does not rely on. This is intended to reduce unnecessary information exposure without affecting normal gameplay.
 
 ### Is it possible to have a false flag?
 Normally, no, with the default values.
-
 
 ### What is the impact on performance?
 Currently, no statistics have been compiled on the CPU impact. The impact can only be negative.
 However, due to the reduction in packets sent, bandwidth can be decreased.
 
+### Will this mod backport to previous versions of Minecraft 26.1?
+No.
 
 ### Can I install it on my client?
-Yes. (Currently this is only possible with NeoForge)
+Yes. Please note, however, that correct operation is not guaranteed
 
 ### What version should I update this project to?
 Alpha versions may have unstable behavior.
