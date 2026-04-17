@@ -21,9 +21,7 @@ However, these mixins are currently not at a low enough level to be completely c
 
 
 ### Next updates
-- Singleplayer support for Fabric & Quilt
 - Default configuration fix
-- Beta version
 - Support for Paper, Spigot, Folia, Bukkit, Sponge and Folia
 - Forge support
 - Configuration for ingoing and outgoing packets
@@ -320,7 +318,7 @@ However, due to the reduction in packets sent, bandwidth can be decreased.
 No.
 
 ### Can I install it on my client?
-Yes. Please note, however, that correct operation is not guaranteed
+Yes. Please note, however, that this project may not work correctly if done.
 
 ### What version should I update this project to?
 Alpha versions may have unstable behavior.
