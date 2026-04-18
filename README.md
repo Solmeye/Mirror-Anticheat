@@ -21,9 +21,7 @@ However, these mixins are currently not at a low enough level to be completely c
 
 
 ### Next updates
-- Default configuration fix
 - Support for Paper, Spigot, Folia, Bukkit, Sponge and Folia
-- Forge support
 - Configuration for ingoing and outgoing packets
 - Option to disable the auto antialt check
 - `/mirror freeze` command
