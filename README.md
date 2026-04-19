@@ -7,6 +7,9 @@
 [![Fabric Icon](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy-minimal/supported/fabric_vector.svg)](https://fabricmc.net/)
 [![Quilt Icon](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy-minimal/supported/quilt_vector.svg)](https://quiltmc.org/)
 [![NeoForge Icon](https://raw.githubusercontent.com/Solmeye/Mirror-Anticheat/2b0ed26bc9fd49f2f1c6b8aa289dbb81cd0db956/neoforge.svg)](https://neoforged.net/)
+[![Forge Icon](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy-minimal/supported/forge_vector.svg)](files.minecraftforge.net)
+[![Paper Icon](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy-minimal/supported/paper_vector.svg)](https://papermc.io/)
+
 
 </center>
 
@@ -19,20 +22,23 @@ The project focuses on being compatible with the latest Minecraft version (26.1+
 This project uses [mixins](https://docs.fabricmc.net/develop/mixins/bytecode) to filter and analyze at the packet level.
 However, these mixins are currently not at a low enough level to be completely compatible with other mods
 
+## Dependency
+This mod requires [Ignite](https://github.com/vectrix-space/ignite) to function with Paper.
 
-### Next updates
-- Support for Paper, Spigot, Folia, Bukkit, Sponge and Folia
+## Next updates
+- Support for Spigot, Folia, Bukkit, Sponge and Folia
 - Configuration for ingoing and outgoing packets
 - Option to disable the auto antialt check
 - `/mirror freeze` command
 - Other (You too can also suggest)
 
-## Filtered packages (ingoing)
+## Packet analysis
+### Ingoing
 *The following incoming packets are scanned for impossible or suspicious behavior*
 
 [None]
 
-## Filtered packages (outgoing)
+### Outgoing
 *Subsequent outgoing packets are filtered and fake the data when a Vanilla client cannot distinguish the difference.
 This is done in order to prevent or limit the effectiveness of a cheat*
 
