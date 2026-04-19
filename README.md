@@ -26,7 +26,7 @@ However, these mixins are currently not at a low enough level to be completely c
 This mod requires [Ignite](https://github.com/vectrix-space/ignite) to function with Paper.
 
 ## Next updates
-- Support for Spigot, Folia, Bukkit, Sponge and Folia
+- Support for Bukkit, Folia, Purpur, Spigot and Sponge
 - Configuration for ingoing and outgoing packets
 - Option to disable the auto antialt check
 - `/mirror freeze` command
