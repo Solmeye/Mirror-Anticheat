@@ -23,7 +23,7 @@ This project uses [mixins](https://docs.fabricmc.net/develop/mixins/bytecode) to
 However, these mixins are currently not at a low enough level to be completely compatible with other mods
 
 ## Dependency
-This mod requires [Ignite](https://github.com/vectrix-space/ignite) to function with Paper.
+This mod requires [Ignite](https://github.com/vectrix-space/ignite) to work with Paper.
 
 ## Next updates
 - Support for Bukkit, Folia, Purpur, Spigot and Sponge
@@ -31,6 +31,18 @@ This mod requires [Ignite](https://github.com/vectrix-space/ignite) to function 
 - Option to disable the auto antialt check
 - `/mirror freeze` command
 - Other (You too can also suggest)
+
+## Known bugs
+
+<details>
+<summary>Clients receive a damage tilt when their food levels change and their health are not full</summary>
+  
+- https://github.com/Solmeye/Mirror-Anticheat/issues/1
+- Version.s : `0.38.0-alpha`
+- Loader : `Paper`
+
+
+</details>
 
 ## Packet analysis
 ### Ingoing
