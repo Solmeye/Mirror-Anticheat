@@ -1,0 +1,20 @@
+accessWidener	v2	official
+accessible	class	net/minecraft/network/protocol/game/ClientboundTrackedWaypointPacket$Operation
+
+accessible	field	net/minecraft/server/network/ServerCommonPacketListenerImpl	connection	Lnet/minecraft/network/Connection;
+
+accessible field net/minecraft/server/level/ServerPlayer lastSentHealth F
+accessible field net/minecraft/server/level/ServerPlayer lastSentFood I
+accessible field net/minecraft/server/level/ServerPlayer lastFoodSaturationZero Z
+
+accessible field net/minecraft/world/level/block/entity/SignBlockEntity frontText Lnet/minecraft/world/level/block/entity/SignText;
+
+accessible method net/minecraft/server/network/ServerCommonPacketListenerImpl playerProfile ()Lcom/mojang/authlib/GameProfile;
+accessible method net/minecraft/server/network/ServerGamePacketListenerImpl playerProfile ()Lcom/mojang/authlib/GameProfile;
+accessible method net/minecraft/server/network/ServerConfigurationPacketListenerImpl playerProfile ()Lcom/mojang/authlib/GameProfile;
+
+accessible method net/minecraft/world/entity/Entity couldAcceptPassenger ()Z
+accessible method net/minecraft/world/entity/Marker couldAcceptPassenger ()Z
+accessible method net/minecraft/world/entity/OminousItemSpawner couldAcceptPassenger ()Z
+
+accessible field net/minecraft/commands/Commands dispatcher Lcom/mojang/brigadier/CommandDispatcher;
