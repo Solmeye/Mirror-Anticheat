@@ -26,11 +26,15 @@ However, these mixins are currently not at a low enough level to be completely c
 This mod requires [Ignite](https://github.com/vectrix-space/ignite) to work with Paper.
 
 ## Next updates
+***I try to update this project everyday***
+
+***You can suggest on the Github or on the Discord***
+
 - Support for Bukkit, Folia, Purpur, Spigot and Sponge
 - Configuration for ingoing and outgoing packets
 - Option to disable the auto antialt check
+- Fix [#1](https://github.com/Solmeye/Mirror-Anticheat/issues/1)
 - `/mirror freeze` command
-- Other (You too can also suggest)
 
 ## Known bugs
 
@@ -38,8 +42,22 @@ This mod requires [Ignite](https://github.com/vectrix-space/ignite) to work with
 <summary>Clients receive a damage tilt when their food levels change and their health are not full</summary>
   
 - https://github.com/Solmeye/Mirror-Anticheat/issues/1
-- Version.s : `0.38.0-alpha`
+- Versions : `0.38.0-alpha`
 - Loader : `Paper`
+
+
+</details>
+
+<details>
+<summary>The client can decide when to use the auto resolver
+</summary>
+
+When the client finishes loading a world, it sends the packet handleAcceptPlayerLoad, which automatically triggers the autoresolver.
+This happens with a Vanilla client, during a change of world (Overworld to Nether)
+  
+- https://github.com/Solmeye/Mirror-Anticheat/issues/2
+- Version : `0.38.0-alpha`
+- Loader : `All`
 
 
 </details>
@@ -163,7 +181,6 @@ Send a message through the webhook
 Resolves [translation keys](https://bugs.mojang.com/browse/MC/issues/MC-265322). Useful for detecting some resource packs or mods.
 
 ## Configuration
-A default configuration is provided.
 
 <details>
 <summary>Default configuration</summary>
