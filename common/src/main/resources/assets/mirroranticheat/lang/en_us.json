@@ -1,0 +1,15 @@
+{
+  "mirror.easteregg": "You found an easter egg !",
+  "mirror.name": "Mirror AntiCheat v%s",
+  "mirror.discord": "Join the Discord !\n%s",
+  "mirror.modrinth": "Modrinth page : \n%s",
+  "mirror.webhook.sent": "The message has been sent via the Webhoook",
+  "mirror.webhook.urlmissing": "The URL of the webhook is missing in the configuration",
+  "mirror.profile": "Profile of %s :\nUUID : %s\nIP : %s\nLatency : %s\nBrand : %s",
+  "mirror.alt": "Checking alts for %s player(s)",
+  "mirror.crash": "%s player(s) crashed",
+  "mirror.crash.failed": "No player were crashed",
+  "mirror.resolve.resolving": "Translating \"%s\" on %s player(s)",
+  "mirror.resolve.resolved": "%s returned \"%s\" as a translation and \"%s\" as a keybind for \"%s\"",
+  "mirror.configuration.reloaded": "Configuration reloaded"
+}

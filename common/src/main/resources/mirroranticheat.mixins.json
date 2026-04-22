@@ -1,0 +1,34 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "fr.solmey.mirroranticheat.mixin",
+	"plugin": "fr.solmey.mirroranticheat.plugins.CorePlugin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"commands.CommandsMixin",
+		"util.keyresolver.ServerGamePacketListenerImplMixin",
+		"util.keyresolver.ServerCommonPacketListenerImplMixin",
+
+		"util.fingerprint.ServerGamePacketListenerImplMixin",
+		"util.fingerprint.ServerConfigurationPacketListenerImplMixin",
+		"util.fingerprint.PlayerListMixin",
+		"util.fingerprint.ServerCommonPacketListenerImplMixin",
+
+		"util.antialt.MinecraftServerMixin",
+
+		"entrypoint.MinecraftServerMixin",
+
+		"outgoing.ServerPlayerMixin",
+		"outgoing.PlayerListMixin",
+		"data.ServerCommonPacketListenerImplMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	},
+	"mixinextras": {
+		"minVersion": "0.5.3"
+	}
+}

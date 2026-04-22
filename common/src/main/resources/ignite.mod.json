@@ -1,0 +1,10 @@
+{
+	"id": "mirroranticheat",
+	"version": "1.0.0",
+	"mixins": [
+		"mirroranticheat.mixins.json"
+	],
+	"wideners": [
+		"mirroranticheat.accesswidener"
+	]
+}
